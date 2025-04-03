@@ -16,77 +16,59 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+       
+    <div class="container mt-5 p-5 shadow bg-light rounded-5">
+        <h3>Default Container</h3>
+        <h4>This container is always on the center. Notice the equal margin in both sides?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et ipsam aliquam ea qui sit doloremque quibusdam veritatis aspernatur temporibus, architecto necessitatibus cum facere vel molestiae, nemo fuga alias? Alias non amet numquam ad nesciunt expedita ratione obcaecati, nisi inventore libero vitae. Et recusandae laboriosam iusto, corporis nobis repudiandae quod!</p>
+    </div>
 
-        <nav
-            class="navbar navbar-expand-sm navbar-light bg-light"
+    <div class="container-fluid mt-5">
+        <h3>Default Container</h3>
+        <h4>This container is always on the center. Notice the equal margin in both sides?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et ipsam aliquam ea qui sit doloremque quibusdam veritatis aspernatur temporibus, architecto necessitatibus cum facere vel molestiae, nemo fuga alias? Alias non amet numquam ad nesciunt expedita ratione obcaecati, nisi inventore libero vitae. Et recusandae laboriosam iusto, corporis nobis repudiandae quod!</p>
+    </div>
+
+    <div class="container">
+        <h3 class="my-3">Row and Cols</h3>
+        <div
+            class="row g-0"
         >
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button
-                    class="navbar-toggler d-lg-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId"
-                    aria-controls="collapsibleNavId"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page"
-                                >Home
-                                <span class="visually-hidden">(current)</span></a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="dropdownId"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                >Dropdown</a
-                            >
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownId"
-                            >
-                                <a class="dropdown-item" href="#"
-                                    >Action 1</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                    >Action 2</a
-                                >
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="d-flex my-2 my-lg-0">
-                        <input
-                            class="form-control me-sm-2"
-                            type="text"
-                            placeholder="Search"
-                        />
-                        <button
-                            class="btn btn-outline-success my-2 my-sm-0"
-                            type="submit"
-                        >
-                            Search
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+            <div class="col"><div class="custom-box">Box 1</div></div>
+            <div class="col"><div class="custom-box">Box 2</div></div>
+            <div class="col"><div class="custom-box">Box 3</div></div>
+            <div class="col"><div class="custom-box">Box 4</div></div>
+        </div>
         
+    </div>
+
+    <div class="container-fluid">
+
+        <h3>col-sm-6</h3>
+
+        <div class="row g-0">
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="custom-box">Box 1</div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-3">
+            <div class="custom-box">Box 2</div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-9">
+            <div class="custom-box">Box 2</div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="container my-4 d-flex justify-content-center">
+        <a href="colors.html" class="btn btn-success">Go To Colors</a>
+    </div>
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
